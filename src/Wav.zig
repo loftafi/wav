@@ -134,6 +134,15 @@ pub fn trim(self: *Wav, start: usize, end: usize) error{InvalidSlice}!void {
     self.values.replaceRangeAssumeCapacity(start, end - start, &.{});
 }
 
+pub fn trimSilence(
+    self: *Wav,
+    block_duration: usize,
+) error{InvalidSlice}!void {
+    const edges = self.edgeSilenceDetector(block_duration);
+    _ = try self.trim(edges.end, self.values.items.len);
+    _ = try self.trim(0, edges.start);
+}
+
 /// Analyse the start and end of the data with a length of `block_duration` ms
 /// to report if the start and/or end of the audio is silent.
 pub fn edgeSilenceDetector(

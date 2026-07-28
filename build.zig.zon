@@ -1,6 +1,6 @@
 .{
     .name = .wav,
-    .version = "0.0.3",
+    .version = "0.1.0",
     .fingerprint = 0x6b7f29288a7c251f,
     .minimum_zig_version = "0.17.0-dev.1426+58a94eaae",
     .dependencies = .{},
