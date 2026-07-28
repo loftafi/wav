@@ -1,6 +1,6 @@
 .{
     .name = .wav,
-    .version = "0.0.1",
+    .version = "0.0.2",
     .fingerprint = 0x6b7f29288a7c251f,
     .minimum_zig_version = "0.17.0-dev.1426+58a94eaae",
     .dependencies = .{},
@@ -11,9 +11,9 @@
         "LICENSE.md",
         //"README.md",
         "quiet.wav",
-        "test_32bit_stereo.wav",
-        "test_wav_fade_edges.wav",
-        "test_16bit.wav",
-        "test_32bit.wav",
+        "test/test_32bit_stereo.wav",
+        "test/test_wav_fade_edges.wav",
+        "test/test_16bit.wav",
+        "test/test_32bit.wav",
     },
 }
