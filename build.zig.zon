@@ -1,0 +1,15 @@
+.{
+    .name = .wav,
+    .version = "0.0.0",
+    .fingerprint = 0x6b7f29288a7c251f,
+    .minimum_zig_version = "0.17.0-dev.1426+58a94eaae",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}
